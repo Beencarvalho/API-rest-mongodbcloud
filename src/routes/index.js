@@ -1,5 +1,6 @@
 import express from "express"; 
 import livros from "./livrosRoutes.js";
+import autores from "./autoresRoutes.js";
 
 
 //esse arquivo da o caminho para o routes, indicando a onde deve ir e fazer oque.
@@ -12,7 +13,8 @@ const routes = (app) => {
 
     app.use(
         express.json(),
-        livros
+        livros,
+        autores
     )
 }
 
